@@ -83,7 +83,7 @@ class Sub:
 
     def __repr__(self):
         if isinstance(self.p1, (Add, Sub)):
-            if isinstance(self.p2,(Add, Sub)):
+            if isinstance(self.p2, (Add, Sub)):
                 return "( " + repr(self.p1) + " ) - ( " + repr(self.p2) + " )"
             return "( " + repr(self.p1) + " ) - " + repr(self.p2)
         if isinstance(self.p2, (Add, Sub)):
